@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: "Sarala", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+  color: #000000;
+}
+
+button {
+  background-color:#2f473a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+/* Header Styles */
+.header {
+  background-color: #2f473a;
+  padding: 10px 0;
+}
+
+.navbar {
+  background-color: #2f473a; 
+  color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2f473a;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/hero-bg-img.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-betwee;
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* How It Works Section */
+.how-it-works {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.how-it-works .steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.step img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Smarter Way Section */
+.smarter-way {
+  background: #f8f8f8;
+  padding: 50px 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.benefits {
+  flex: 1;
+}
+
+.benefit {
+  margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #2f473a;
+  color: #fff; 
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  max-width: 300px;
+}
+
+/* FAQ Section */
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.faq-item {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.section {
+  background-image: url('images/cta-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+/* Footer Styles */
+.footer {
+  background-color: #2f473a; 
+  color: #fff; 
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer .social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-button {
+  margin-top: 20px;
+  background-color: #2f473a;
+  color: #2c3e50;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #2f473a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .how-it-works .steps {
+      flex-direction: column;
+  }
+
+  .info {
+      flex-direction: column;
+  }
+
+  .testimonials-container {
+      flex-direction: column;
+  }
+}
